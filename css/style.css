@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400&display=swap');
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+:root {
+	--text-color: #87b41c;
+}
+body {
+	font-family: 'Inconsolata', monospace;
+	background-color: #292a25;
+	color: #f9f9f9;
+	font-size: 1.125em; /* 18px/16px */
+	line-height: 1.6;
+}
+.container {
+	max-width: 31.25em; /* 500px */
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+h1 {
+	font-size: 2.5555em; /* 46px/18px */
+	font-weight: 200;
+	color: var(--text-color);
+}
+.white-font {
+	margin-bottom: 0.434782em; /* 20px/46px */
+	color: #f9f9f9;
+}
+h2 {
+	font-size: 1.3333em; /* 24px */
+	font-weight: 300;
+	color: var(--text-color);
+}
+h3 {
+	font-size: 1.2222em; /* 22px */
+	font-weight: 300;
+	margin-bottom: 0.72727em; /* 16px/22px */
+	text-transform: uppercase;
+}
+ul {
+	list-style: none;
+}
+a {
+	color: var(--text-color);
+	text-decoration: none;
+}
+p {
+	margin: 0.5555em 0; /* 10px */
+}
+.nav {
+	margin: 5.55555em auto 2.22222em auto;
+}
+.nav li {
+	color: var(--text-color);
+	cursor: pointer;
+}
+.hidden {
+	display: none;
+}
+@keyframes blink {
+	from, to {
+		color: transparent;
+	}
+	50% {
+		color: #f9f9f9;
+	}
+}
+.cursor {
+	font-weight: 200;
+	animation: 0.8s blink step-end infinite;
+}
+
+/* --- WinBox Styles --- */
+
+.wb-body {
+	background-color: #292a25;
+}
+.wb-title {
+    font-size: 0.777778em; /* 14px */
+}
+.wb-icon * {
+    opacity: 0.7;
+}
+.wb-icon *:hover {
+    opacity: 1;
+}
+.wb-full {
+    display: none;
+}
+#about-content, #contact-content {
+	padding: 1.1111em 0.555555em; /* 20px 10px */
+}
+/* --- scrollbar --- */
+.wb-body::-webkit-scrollbar {
+    width: 0.66667em; /* 12px */
+}
+.wb-body::-webkit-scrollbar-track {
+    background: transparent;
+}
+.wb-body::-webkit-scrollbar-thumb {
+    border-radius: 0.55556em; /* 10px */
+    background: #34362F;
+}
+.wb-body::-webkit-scrollbar-thumb:window-inactive {
+    background: #32332D;
+}
+.wb-body::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+/* --- MediaQueries --- */
+
+@media  ( max-width: 40em )  {  /* 640px */
+	body {
+		font-size: 1em; /* 16px */
+	}
+	h1 {
+		font-size: 2.375em; /* 38px */
+	}
+}
+@media  ( max-width: 31.25em ) {  /* 500px */
+	.container {
+		max-width: 16.25em; /* 360px */
+	}
+	h1 {
+		font-size: 2.25em; /* 36px */
+	}
+}
+@media  ( max-width: 26.25em ) { /* 420px */
+	h1 {
+		font-size: 2em; /* 32px */
+	}
+	h2 {
+		font-size: 1.375em; /* 22px */
+	}
+	h3 {
+		font-size: 1.25em; /* 20px */
+	}
+}
+@media  ( max-width: 21.25em ) {  /* 340px */
+	h1 {
+		font-size: 1.875em; /* 30px */
+	}
+	h2 {
+		font-size: 1.25em; /* 20px */
+	}
+	h3 {
+		font-size: 1.125em; /* 18px */
+	}
+	p {
+		font-size: 0.9375em; /* 15px */
+		line-height: 1.4;
+	}
+}
